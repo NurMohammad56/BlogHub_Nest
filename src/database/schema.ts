@@ -126,7 +126,7 @@ export const commentsRelations = relations(comments, ({ one }) => ({
 }));
 
 // Inferred Types
-export type  UserRow = typeof users.$inferSelect;
+export type UserRow = typeof users.$inferSelect;
 export type NewUserRow = typeof users.$inferInsert;
 export type PostRow = typeof posts.$inferSelect;
 export type NewPostRow = typeof posts.$inferInsert;
@@ -134,5 +134,5 @@ export type CommentRow = typeof comments.$inferSelect;
 export type NewCommentRow = typeof comments.$inferInsert;
 export type RefreshTokenRow = typeof refreshTokens.$inferInsert;
 
-export type UserRol = (typeof roleEnum.enumValues) [number];
-export type PostStatus = (typeof postStatusEnum.enumValues) [number];
+export type UserRole = (typeof roleEnum.enumValues)[number];
+export type PostStatus = (typeof postStatusEnum.enumValues)[number];

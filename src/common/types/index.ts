@@ -7,12 +7,13 @@ export interface ApiResponse<T = unknown> {
   timestamp: string;
 }
 
-export interface ApiResponseError {
+export interface ApiErrorResponse {
   success: false;
   statusCode: number;
   message: string;
   errorS?: Record<string, string[]>;
   timestamp: string;
+  path: string;
   requestId?: string;
 }
 
